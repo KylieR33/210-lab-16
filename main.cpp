@@ -13,6 +13,11 @@ class Color{
     Color(){red = 0; blue = 0; green = 0; }
     Color(int r) {red = r; blue = 0; green = 0;}
     Color(int r, int b, int g){red = r; blue = b; green = g;}
+     void print(){
+         cout << setw(15) << left << red;
+         cout << setw(15) << left << blue;
+         cout << setw(15) << left << green << endl;
+    }
 
 };
 
@@ -29,7 +34,9 @@ int main(){
         r = 1 + (rand() % 999);
     }
 
-    
+    Color color2();
+
+
     cout << setw(15) << left << "R";
     cout << setw(15) << left << "B";
     cout << setw(15) << left << "G" << endl;
