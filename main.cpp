@@ -4,6 +4,8 @@
 
 using namespace std;
 
+const int n = 25;
+
 class Color{
     private:
     int red;
@@ -26,20 +28,19 @@ int main(){
     int b;
     int g;
     srand((unsigned) time(NULL));
-    int n = 25 + (rand() % 25);
-
-    Color color1;
-
-    for (int i = 0; i < n; i++){
-        r = 1 + (rand() % 999);
-    }
-
-    Color color2();
-
 
     cout << setw(15) << left << "R";
     cout << setw(15) << left << "B";
     cout << setw(15) << left << "G" << endl;
+
+    Color color1;
+
+    for (int i = 0; i < 1; i++){
+        r = 1 + (rand() % 999);
+        Color color2(r);
+        color2.print();
+    }
+
 
     return 0;
 }
