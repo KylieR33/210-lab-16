@@ -1,6 +1,5 @@
 #include <iostream>
 #include <iomanip>
-#include <vector>
 // COMSC-210 | Lab 16 | Kylie Roxo
 using namespace std;
 
